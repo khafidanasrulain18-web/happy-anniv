@@ -46,9 +46,6 @@ export default function LoveLetter() {
             </p>
           </div>
         </div>
-        <p className="mt-4 text-center font-body text-xs text-mauve/40">
-          (isi suratnya bisa kamu edit sesuka hati di komponen LoveLetter)
-        </p>
       </div>
     </section>
   );
