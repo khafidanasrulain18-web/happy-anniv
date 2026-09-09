@@ -19,6 +19,19 @@ const config = {
         display: ["var(--font-display)", "serif"],
         body: ["var(--font-body)", "sans-serif"],
       },
+      keyframes: {
+        shake: {
+          "0%, 100%": { transform: "translateX(0) rotate(-1deg)" },
+          "20%": { transform: "translateX(-8px) rotate(-1deg)" },
+          "40%": { transform: "translateX(8px) rotate(-1deg)" },
+          "60%": { transform: "translateX(-6px) rotate(-1deg)" },
+          "80%": { transform: "translateX(6px) rotate(-1deg)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(10px) rotate(-1deg)" },
+          "100%": { opacity: "1", transform: "translateY(0) rotate(-1deg)" },
+        },
+      },
     },
   },
   plugins: [],
