@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fdf1ef;
+}
+
+/* Angka umur tidak boleh "lompat" lebar saat berubah tiap detik */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
+@media (max-width: 767px) {
+  .has-custom-cursor,
+  .has-custom-cursor * {
+    cursor: auto !important;
+  }
+}
